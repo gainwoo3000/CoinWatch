@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "cloud.namuapplication.coinwatch"
+    namespace = "namu0329.CoinWatch"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "cloud.namuapplication.coinwatch"
+        applicationId = "namu0329.CoinWatch"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
