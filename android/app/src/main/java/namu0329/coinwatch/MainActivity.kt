@@ -1,4 +1,4 @@
-package namu0329.CoinWatch
+package namu0329.coinwatch
 
 import android.annotation.SuppressLint
 import android.os.Bundle
