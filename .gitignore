@@ -21,3 +21,14 @@ xcuserdata/
 
 # macOS
 .DS_Store
+
+# Android / Gradle
+android/local.properties
+android/.gradle/
+android/.idea/
+android/*.iml
+android/app/build/
+android/build/
+android/captures/
+android/.cxx/
+
