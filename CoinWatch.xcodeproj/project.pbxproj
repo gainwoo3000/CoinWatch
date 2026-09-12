@@ -6,13 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2207A8BA30556157007BEABF /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 2207A8B930556157007BEABF /* GoogleMobileAds */; };
+		2207A8BD30556177007BEABF /* UnityAds in Frameworks */ = {isa = PBXBuildFile; productRef = 2207A8BC30556177007BEABF /* UnityAds */; };
+		2207A8C030556196007BEABF /* UnityMediationSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2207A8BF30556196007BEABF /* UnityMediationSDK */; };
+		2207A8C3305561B0007BEABF /* UnityAdsAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 2207A8C2305561B0007BEABF /* UnityAdsAdapter */; };
+		2207A8C630556300007BEABF /* AdMobAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 2207A8C530556300007BEABF /* AdMobAdapter */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2207A8A630555E40007BEABF /* CoinWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2207A8C430556200007BEABF /* Exceptions for "CoinWatch" folder in "CoinWatch" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2207A8A530555E40007BEABF /* CoinWatch */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2207A8A830555E40007BEABF /* CoinWatch */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2207A8C430556200007BEABF /* Exceptions for "CoinWatch" folder in "CoinWatch" target */,
+			);
 			path = CoinWatch;
 			sourceTree = "<group>";
 		};
@@ -23,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2207A8C030556196007BEABF /* UnityMediationSDK in Frameworks */,
+				2207A8C3305561B0007BEABF /* UnityAdsAdapter in Frameworks */,
+				2207A8C630556300007BEABF /* AdMobAdapter in Frameworks */,
+				2207A8BA30556157007BEABF /* GoogleMobileAds in Frameworks */,
+				2207A8BD30556177007BEABF /* UnityAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +91,11 @@
 			);
 			name = CoinWatch;
 			packageProductDependencies = (
+				2207A8B930556157007BEABF /* GoogleMobileAds */,
+				2207A8BC30556177007BEABF /* UnityAds */,
+				2207A8BF30556196007BEABF /* UnityMediationSDK */,
+				2207A8C2305561B0007BEABF /* UnityAdsAdapter */,
+				2207A8C530556300007BEABF /* AdMobAdapter */,
 			);
 			productName = CoinWatch;
 			productReference = 2207A8A630555E40007BEABF /* CoinWatch.app */;
@@ -94,6 +125,13 @@
 			);
 			mainGroup = 2207A89D30555E40007BEABF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2207A8B830556157007BEABF /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				2207A8BB30556177007BEABF /* XCRemoteSwiftPackageReference "Unity-Ads-Swift-Package" */,
+				2207A8BE30556196007BEABF /* XCRemoteSwiftPackageReference "LevelPlay-Swift-Package" */,
+				2207A8C1305561B0007BEABF /* XCRemoteSwiftPackageReference "LevelPlay-UnityAds-Adapter-Swift-Package" */,
+				2207A8C730556300007BEABF /* XCRemoteSwiftPackageReference "LevelPlay-AdMob-Adapter-Swift-Package" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2207A8A730555E40007BEABF /* Products */;
 			projectDirPath = "";
@@ -256,6 +294,8 @@
 				DEVELOPMENT_TEAM = J3KHZ2BPWZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "코인워치";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -265,7 +305,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = namu0329.CoinWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -288,6 +329,8 @@
 				DEVELOPMENT_TEAM = J3KHZ2BPWZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "코인워치";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,7 +340,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = namu0329.CoinWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -332,6 +376,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2207A8B830556157007BEABF /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.9.0;
+			};
+		};
+		2207A8BB30556177007BEABF /* XCRemoteSwiftPackageReference "Unity-Ads-Swift-Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Unity-Technologies/Unity-Ads-Swift-Package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.20.0;
+			};
+		};
+		2207A8BE30556196007BEABF /* XCRemoteSwiftPackageReference "LevelPlay-Swift-Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ironsource-mobile/LevelPlay-Swift-Package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.6.0;
+			};
+		};
+		2207A8C1305561B0007BEABF /* XCRemoteSwiftPackageReference "LevelPlay-UnityAds-Adapter-Swift-Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ironsource-mobile/LevelPlay-UnityAds-Adapter-Swift-Package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.0;
+			};
+		};
+		2207A8C730556300007BEABF /* XCRemoteSwiftPackageReference "LevelPlay-AdMob-Adapter-Swift-Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ironsource-mobile/LevelPlay-AdMob-Adapter-Swift-Package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2207A8B930556157007BEABF /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2207A8B830556157007BEABF /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+		2207A8BC30556177007BEABF /* UnityAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2207A8BB30556177007BEABF /* XCRemoteSwiftPackageReference "Unity-Ads-Swift-Package" */;
+			productName = UnityAds;
+		};
+		2207A8BF30556196007BEABF /* UnityMediationSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2207A8BE30556196007BEABF /* XCRemoteSwiftPackageReference "LevelPlay-Swift-Package" */;
+			productName = UnityMediationSDK;
+		};
+		2207A8C2305561B0007BEABF /* UnityAdsAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2207A8C1305561B0007BEABF /* XCRemoteSwiftPackageReference "LevelPlay-UnityAds-Adapter-Swift-Package" */;
+			productName = UnityAdsAdapter;
+		};
+		2207A8C530556300007BEABF /* AdMobAdapter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2207A8C730556300007BEABF /* XCRemoteSwiftPackageReference "LevelPlay-AdMob-Adapter-Swift-Package" */;
+			productName = AdMobAdapter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2207A89E30555E40007BEABF /* Project object */;
 }
