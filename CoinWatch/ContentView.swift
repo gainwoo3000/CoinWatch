@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  CryptoWindow
+//  CoinWatch
 //
 //  Created by macOS on 9/12/26.
 //

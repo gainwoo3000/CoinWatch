@@ -1,4 +1,4 @@
-package namu0329.cryptowindow
+package namu0329.coinwatch
 
 import android.content.Context
 import android.util.Log

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "namu0329.cryptowindow"
+    namespace = "namu0329.coinwatch"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "namu0329.cryptowindow"
+        applicationId = "namu0329.coinwatch"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

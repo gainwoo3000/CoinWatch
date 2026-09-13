@@ -1,6 +1,6 @@
 //
-//  CryptoWindowApp.swift
-//  CryptoWindow
+//  CoinWatchApp.swift
+//  CoinWatch
 //
 //  Created by macOS on 9/12/26.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct CryptoWindowApp: App {
+struct CoinWatchApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

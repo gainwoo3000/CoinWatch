@@ -1,6 +1,6 @@
 //
 //  AdsManager.swift
-//  CryptoWindow
+//  CoinWatch
 //
 
 import AppTrackingTransparency
