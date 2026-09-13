@@ -15,5 +15,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CoinWatch"
+rootProject.name = "CoinWindow"
 include(":app")

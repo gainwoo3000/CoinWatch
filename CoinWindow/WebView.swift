@@ -1,6 +1,6 @@
 //
 //  WebView.swift
-//  CoinWatch
+//  CoinWindow
 //
 
 import SwiftUI
