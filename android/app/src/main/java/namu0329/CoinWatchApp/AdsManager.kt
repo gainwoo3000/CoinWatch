@@ -1,4 +1,4 @@
-package namu0329.coinwatch
+package namu0329.coinwatchapp
 
 import android.content.Context
 import android.util.Log
