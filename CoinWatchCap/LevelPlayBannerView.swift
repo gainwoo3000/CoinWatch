@@ -1,6 +1,6 @@
 //
 //  LevelPlayBannerView.swift
-//  CoinWatchApp
+//  CoinWatchCap
 //
 
 import SwiftUI

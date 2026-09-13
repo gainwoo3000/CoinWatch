@@ -1,6 +1,6 @@
 //
-//  CoinWatchAppApp.swift
-//  CoinWatchApp
+//  CoinWatchCapApp.swift
+//  CoinWatchCap
 //
 //  Created by macOS on 9/12/26.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct CoinWatchAppApp: App {
+struct CoinWatchCapApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  CoinWatchApp
+//  CoinWatchCap
 //
 //  Created by macOS on 9/12/26.
 //
