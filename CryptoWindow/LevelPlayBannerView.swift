@@ -1,6 +1,6 @@
 //
 //  LevelPlayBannerView.swift
-//  CoinWindow
+//  CryptoWindow
 //
 
 import SwiftUI

@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  CoinWindow
+//  CryptoWindow
 //
 //  Created by macOS on 9/12/26.
 //

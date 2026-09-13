@@ -1,4 +1,4 @@
-package namu0329.coinwindow
+package namu0329.cryptowindow
 
 import android.content.Context
 import android.util.Log

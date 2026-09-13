@@ -1,4 +1,4 @@
-package namu0329.coinwindow
+package namu0329.cryptowindow
 
 import android.annotation.SuppressLint
 import android.os.Bundle
