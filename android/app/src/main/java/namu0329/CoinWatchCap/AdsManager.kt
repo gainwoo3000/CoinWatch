@@ -24,9 +24,10 @@ object AdsManager {
 
     private var isInitialized = false
 
-    fun initialize(context: Context, onComplete: () -> Unit) {
+    fun initialize(context: Context, onComplete: (success: Boolean) -> Unit) {
         if (isInitialized) {
-            onComplete()
+            Log.d(TAG, "[광고] SDK 이미 초기화됨, 재사용")
+            onComplete(true)
             return
         }
 
@@ -36,16 +37,18 @@ object AdsManager {
             )
         }
 
+        Log.d(TAG, "[광고] LevelPlay.init() 호출 (appKey=$APP_KEY)")
         val initRequest = LevelPlayInitRequest.Builder(APP_KEY).build()
         LevelPlay.init(context.applicationContext, initRequest, object : LevelPlayInitListener {
             override fun onInitSuccess(configuration: LevelPlayConfiguration) {
+                Log.d(TAG, "[광고] SDK 로드 성공")
                 isInitialized = true
-                onComplete()
+                onComplete(true)
             }
 
             override fun onInitFailed(error: LevelPlayInitError) {
-                Log.e("AdsManager", "LevelPlay init failed: $error")
-                onComplete()
+                Log.e(TAG, "[광고] SDK 로드 실패 (errorCode=${error.errorCode}, message=${error.errorMessage})")
+                onComplete(false)
             }
         })
     }
@@ -57,4 +60,6 @@ object AdsManager {
     fun launchTestSuite(context: Context) {
         LevelPlay.launchTestSuite(context)
     }
+
+    private const val TAG = "AdsManager"
 }
